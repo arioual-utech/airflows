@@ -1,5 +1,14 @@
 # 📊 Test DAG Airflow - Démo IAAS
 
+Ceci est un exemple de README mis à jour automatiquement par n8n et GPT, cet encard ne devrait pas bouger d'un pouce et seul la partie en dessous est modifée par l'IA.
+
+## 🧑‍💻 Auteur & Contact
+
+- Auteur : Équipe IAAS
+- Contact : iaas-team@example.com
+
+# Doc by AI
+
 Ce dépôt contient un exemple de DAG (Directed Acyclic Graph) pour Apache Airflow. Le but est de tester le fonctionnement d'une installation Airflow via un workflow simple comportant différentes tâches Python, Bash et des opérateurs de contrôle.
 
 ## 🚀 Description du projet
@@ -53,11 +62,6 @@ Cette section est dédiée aux futures intégrations avec des composants d'intel
 
 - `catchup=False` : Les exécutions passées ne seront pas rattrapées.
 - `start_date=datetime(2024, 1, 1)` : Date à partir de laquelle le DAG peut s'exécuter.
-
-## 🧑‍💻 Auteur & Contact
-
-- Auteur : Équipe démo IAAS
-- Contact : iaas-team@example.com
 
 ---
 
