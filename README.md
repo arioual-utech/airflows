@@ -9,7 +9,6 @@ Ceci est un exemple de README mis à jour automatiquement par n8n et GPT, cet en
 
 # Doc by AI
 ## __init__.py
-
 Ce fichier permet de traiter le dossier `dags` comme un package Python.
 
 ## test_dag.py
