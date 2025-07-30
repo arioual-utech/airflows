@@ -15,12 +15,10 @@ Ce fichier permet de traiter le dossier dags comme un package Python.
 ## test_dag.py
 DAG de test pour vérifier le fonctionnement d'Apache Airflow. Ce DAG contient plusieurs tâches simples pour tester l'installation et la configuration.
 
-### Fonctionnalités :
+Principales fonctionnalités :
 - Tâche Python `hello_task` : Affiche un message de salutation.
 - Tâche Python `time_task` : Affiche l'heure actuelle.
 - Tâche Python `math_task` : Effectue un calcul simple.
 - Tâche Bash `bash_task` : Exécute une commande bash et affiche la date.
 
-#### Commentaire :
-- La structure du DAG est claire et bien organisée.
-- Les noms des tâches pourraient être plus descriptifs pour une meilleure compréhension.
+Remarque : Les noms des tâches pourraient être plus descriptifs pour une meilleure compréhension du DAG.
