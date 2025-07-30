@@ -10,15 +10,16 @@ Ceci est un exemple de README mis à jour automatiquement par n8n et GPT, cet en
 # Doc by AI
 ## __init__.py
 
-Ce fichier permet de traiter le dossier `dags` comme un package Python.
+Ce fichier permet de traiter le dossier dags comme un package Python.
 
 ## test_dag.py
+
 DAG de test pour vérifier le fonctionnement d'Apache Airflow. Ce DAG contient plusieurs tâches simples pour tester l'installation et la configuration.
 
 Principales fonctionnalités :
-- Tâche Python `print_hello` : Affiche un message simple.
-- Tâche Python `print_current_time` : Affiche l'heure actuelle.
-- Tâche Python `calculate_simple_math` : Effectue un calcul simple.
-- Tâche Bash `bash_task` : Exécute une commande bash et affiche la date.
+- Tâche Python `print_hello`: Affiche un message de salutation.
+- Tâche Python `print_current_time`: Affiche l'heure actuelle.
+- Tâche Python `calculate_simple_math`: Effectue un calcul simple.
+- Tâche Bash `bash_task`: Exécute une commande bash et affiche la date.
 
-Remarque : La structure du DAG est claire et les tâches sont bien définies.
+**Remarque** : Le DAG pourrait bénéficier d'une documentation plus détaillée pour expliquer le flux d'exécution des tâches et leur objectif spécifique.
