@@ -32,7 +32,7 @@ dag = DAG(
 
 # Fonction Python pour la première tâche
 def print_hello():
-    """Tâche Python simple qui affiche un message"""
+    """Salut IAAS """
     print("Bonjour depuis Airflow!")
     return "Hello task completed"
 
