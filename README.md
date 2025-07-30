@@ -21,4 +21,4 @@ Principales fonctionnalités :
 - Tâche Python `math_task` : Effectue un calcul simple.
 - Tâche Bash `bash_task` : Exécute une commande bash et affiche la date.
 
-Remarque : Les noms des tâches pourraient être plus descriptifs pour une meilleure compréhension du DAG.
+Remarque : La structure du DAG est claire, mais l'ajout de documentation supplémentaire pour expliquer le flux des tâches pourrait être utile pour une meilleure compréhension.
