@@ -41,7 +41,7 @@ Voici quelle serait le chemin logique d'un projet au sein de la IAAS :
 
 Il y aurait néanmoins deux (?) exceptions. Ce serait des Épics permanentes pour des raisons technique. Incident et Évolution.
 
-
+```mermaid
 flowchart LR
   subgraph "Hiérarchie des tickets"
     INIT["Initiative<br/>Durée : X mois à 1 an<br/>Initiateur : PO<br/>Définition : L'initiative englobe un projet au long-court. Il faut l'imaginer comme le coeur du projet, présenté en roadmap. Son objectif est de décrire avec un niveau de détail fonctionnel élevé quel est le résultat attendu dans plusieurs mois."]
@@ -56,7 +56,9 @@ flowchart LR
   end
   EPIC -.-> ANOM
   EPIC -.-> EVO
+```
 
+```mermaid
   flowchart TD
   A["Arrivée du besoin<br/>(PO, Manager, ...)"] --> B["Traduction en besoin fonctionnel par le PO"]
   B --> C["Échange avec l'équipe<br/>(pourquoi, comment, requalification si nécessaire ...)"]
@@ -67,7 +69,9 @@ flowchart LR
   G --> H["Affinage technique par les DevOPS"]
   H --> I["Cycle de plusieurs épics permettant d'atteindre la fin du projet"]
   I --> J["Apéro"]
+```
 
+```mermaid
   flowchart LR
   subgraph "Avant"
     E1["Épic (peut durer 1 an)"]
@@ -81,3 +85,4 @@ flowchart LR
   E1 --> I1
   E1 --> US1
   T1 --> T2
+```
