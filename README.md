@@ -58,7 +58,7 @@ flowchart LR
   EPIC -.-> EVO
 ```
 
-```mermaid
+```mermaidhttps://docs.github.com/en/rest/rate-limit/rate-limit?apiVersion=2022-11-28
   flowchart TD
   A["Arrivée du besoin<br/>(PO, Manager, ...)"] --> B["Traduction en besoin fonctionnel par le PO"]
   B --> C["Échange avec l'équipe<br/>(pourquoi, comment, requalification si nécessaire ...)"]
@@ -75,14 +75,17 @@ flowchart LR
   flowchart LR
   subgraph "Avant"
     E1["Épic (peut durer 1 an)"]
-    T1["Tâches"]
+    US1["User story"]
+    T1["Sous-tâches"]
   end
   subgraph "Après"
     I1["Initiative"]
-    US1["User story (ex-Épic)"]
+    US2["Épic"]
     T2["Tâches = points d'étape pour atteindre la fin d'une épic"]
+    ST1["Sous-tâches = points d'étape pour atteindre la fin d'une tâche"]
   end
   E1 --> I1
-  E1 --> US1
+  US1 --> US2
   T1 --> T2
+  T1 --> ST1
 ```
