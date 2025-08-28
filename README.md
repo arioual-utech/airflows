@@ -34,12 +34,15 @@ Voici quelle serait le chemin logique d'un projet au sein de la IAAS :
 6. Création de l'initiative en lien avec le projet
 7. Découpage de plusieurs épics fonctionnelles de 2-3 semaines
 8. Affinage technique par les DevOPS
-9. Cycle de plusieurs épics permettant d'atteindre la fin du projet
-10. Apéro
+9. Réalisation des tâches par les DevOPS
+10. Validation de l'Épic par le PO
+11. Création de la prochaine Épic
+12. Cycle de plusieurs épics permettant d'atteindre la fin du projet
+13. Apéro
 
 ### Exceptions
 
-Il y aurait néanmoins deux (?) exceptions. Ce serait des Épics permanentes pour des raisons technique. Incident et Évolution.
+Il y aurait néanmoins trois exceptions. Ce serait des Épics permanentes pour des raisons technique. Incidents, Évolutions et Études.
 
 ```mermaid
 flowchart LR
@@ -51,14 +54,16 @@ flowchart LR
     INIT --> EPIC --> TACHE --> SOUSTACHE
   end
   subgraph "Exceptions permanentes (techniques)"
-    ANOM["Anomalie<br/>Durée : Undefined<br/>Initiateur : Any<br/>Définition : L'anomalie est un ticket permettant de soumettre un problème technique sur une solution. Il peut s'agir d'un point de blocage dans un projet permettant de justifier d'un retard, ou d'un bug sur une solution déjà livrée. Sa prioritée est élévée"]
+    INC["Incident<br/>Durée : Undefined<br/>Initiateur : Any<br/>Définition : Problème technique sur une solution (blocage projet ou bug sur livrable). Priorité élevée"]
     EVO["Évolution<br/>Durée : Undefined<br/>Initiateur : Any<br/>Définition : L'évolution restranscrit un besoin de changement concernant une solution déjà produite, ou interne à l'équipe. Sa prioritée est en général plutôt basse."]
+    ETUDE["Études<br/>Durée : Undefined<br/>Initiateur : Any<br/>Définition : Études préparatoires techniques (faisabilité, chemins critiques, recommandations de découpage, points d'étape)."]
   end
-  EPIC -.-> ANOM
+  EPIC -.-> INC
   EPIC -.-> EVO
+  EPIC -.-> ETUDE
 ```
 
-```mermaidhttps://docs.github.com/en/rest/rate-limit/rate-limit?apiVersion=2022-11-28
+```mermaid
   flowchart TD
   A["Arrivée du besoin<br/>(PO, Manager, ...)"] --> B["Traduction en besoin fonctionnel par le PO"]
   B --> C["Échange avec l'équipe<br/>(pourquoi, comment, requalification si nécessaire ...)"]
@@ -67,8 +72,12 @@ flowchart LR
   E --> F["Création de l'initiative en lien avec le projet"]
   F --> G["Découpage de plusieurs épics fonctionnelles de 2-3 semaines"]
   G --> H["Affinage technique par les DevOPS"]
-  H --> I["Cycle de plusieurs épics permettant d'atteindre la fin du projet"]
-  I --> J["Apéro"]
+  H --> I["Réalisation des tâches par les DevOPS"]
+  I --> J["Validation de l'Épic par le PO"]
+  J --> K["Création de la prochaine Épic"]
+  K --> H
+  K --> L["Cycle de plusieurs épics permettant d'atteindre la fin du projet"]
+  L --> M["Apéro"]
 ```
 
 ```mermaid
