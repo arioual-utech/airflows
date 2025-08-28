@@ -45,7 +45,7 @@ Voici quelle serait le chemin logique d'un projet au sein de la IAAS :
 Il y aurait néanmoins trois exceptions. Ce serait des Épics permanentes pour des raisons technique. Incidents, Évolutions et Études.
 
 ```mermaid
-flowchart LR
+flowchart TD
   subgraph "Hiérarchie des tickets"
     INIT["Initiative<br/>Durée : X mois à 1 an<br/>Initiateur : PO<br/>Définition : L'initiative englobe un projet au long-court. Il faut l'imaginer comme le coeur du projet, présenté en roadmap. Son objectif est de décrire avec un niveau de détail fonctionnel élevé quel est le résultat attendu dans plusieurs mois."]
     EPIC["Epic<br/>Durée : 2~3 semaines<br/>Initiateur : PO/LT<br/>Définition : L'Epic présente un objectif fonctionnel concret à réaliser dans les 2 prochaines semaines. Elle est rédigée par le PO sous forme d'un besoin, et comprends un critère d'acceptation testable par lui."]
